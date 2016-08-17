@@ -14,11 +14,15 @@
         echo $this->Html->script('jquery-migrate-1.1.1');
         echo $this->Html->script('camera');
         echo $this->Html->script('jquery.easing.1.3');
+        echo $this->Html->meta(
+            'favicon.ico',
+            '/favicon.ico',
+            array('type' => 'icon')
+        );
         ?>
         <title>Observatório EPT</title>
         <?php
         echo $this->fetch('css');
-        echo $this->fetch('script');
         ?>
     </head>
     <body>
@@ -48,7 +52,7 @@
             </div>
         </header>
         <div id="content">
-            <?php echo $this->element('slider'); ?>
+            <?php //echo $this->element('slider'); ?>
             <div class="inner">
                 <div class="container_12">
                     <div class="wrapper">
@@ -71,3 +75,5 @@
         </div>
     </body>
 </html>
+
+<?php echo $this->fetch('script'); ?>
