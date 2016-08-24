@@ -15,6 +15,11 @@
  * @since         CakePHP(tm) v 0.10.0.1076
  * @license       http://www.opensource.org/licenses/mit-license.php MIT Licenses
  */
+    
+    $this->assign('headerMenu', $this->element('headerElement'));
+    $this->assign('slider', $this->element('sliderElement'));
+    $this->assign('hist', $this->element('histElement'));
+    $this->assign('parc', $this->element('parcElement'));
 
 ?>
 

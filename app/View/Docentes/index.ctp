@@ -9,6 +9,12 @@
     <th colspan='3'>Ação</th>
 </thead>
 <tbody>
+    
+    <?php 
+    //$this->assign('slider', $this->element('sliderElement'));
+    //$this->assign('hist', $this->element('histElement'));
+    //$this->assign('parc', $this->element('parcElement'));
+    ?>
     <?php foreach ($docentes as $docente): ?>
         <tr>      
             <td>

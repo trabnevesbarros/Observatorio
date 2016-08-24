@@ -5,6 +5,7 @@
         echo $this->Html->charset();
         echo $this->Html->css('custom');
         echo $this->Html->css('cake.generic');
+        echo $this->Html->css('bootstrap');
         echo $this->Html->css('reset');
         echo $this->Html->css('grid');
         echo $this->Html->css('camera');
@@ -27,32 +28,10 @@
     </head>
     <body>
         <header>
-            <?php echo $this->Html->image('eptlogo.png', array('id' => 'logoept')); ?>
-            <div class="container_12">
-                <div class="grid_12">
-                    <div class="wrapper">
-                        <nav>
-                            <ul class="menu">
-                                <li  class="active"><a href="index.html">Início</a></li>
-                                <li><a>Programas</a>
-                                    <ul>
-                                        <li><a href="pesquisa.html">Pesquisa</a></li><br>
-                                        <li><a href="prominp.html">Prominp</a></li><br>
-                                        <li><a href="pronatec.html">Pronatec</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="base.html">Bases</a></li>
-                                <li><a href="linha-pesquisa2.html">Qualificação</a></li>
-                                <li><a href="sobre-ifrs.html">ifrs</a></li>
-                                <li><a href="contato.html">Contato</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+            <?php echo $this->fetch('headerMenu')?>
         </header>
         <div id="content">
-            <?php //echo $this->element('slider'); ?>
+            <?php echo $this->fetch('slider'); ?>
             <div class="inner">
                 <div class="container_12">
                     <div class="wrapper">
@@ -60,9 +39,9 @@
                             <?php echo $this->Session->flash(); ?>
                             <?php echo $this->fetch('content'); ?>
                         </div>
-                        <?php echo $this->element('block'); ?>
+                        <?php echo $this->fetch('hist'); ?>
                     </div>
-                    <?php echo $this->element('wrapper'); ?>
+                    <?php echo $this->fetch('parc'); ?>
                 </div>
             </div>
             <footer>
