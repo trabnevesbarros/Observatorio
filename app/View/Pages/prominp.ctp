@@ -1,54 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Linhas de pesquisa</title>
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta charset="utf-8">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery-migrate-1.1.1.js"></script>
-<!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
-<link href='http://fonts.googleapis.com/css?family=Lato:300italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
-<![endif]-->
-</head>
-<body>
- <header>
-    <div class="container_12">
-       <div class="grid_13">
-        <div class="wrapper"> <a href="index.html" class="logo">teste</a>
-          <nav>
-            <ul class="menu">
-              <li  class="active"><a href="index.html">Início</a></li>
-              <li><a>Programas</a>
-                <ul>
-                  <li><a href="pesquisa.html">Pesquisa</a></li><br>
-                  <li><a href="prominp.html">Prominp</a></li><br>
-                  <li><a href="pronatec.html">Pronatec</a></li>
-                </ul>
-              </li>
-              <li><a href="base.html">Bases</a></li>
-              <li><a href="linha-pesquisa2.html">Qualificação</a></li>
-              <li><a href="sobre-ifrs.html">ifrs</a></li>
-              <li><a href="contato.html">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
-    </div>
-  </header>
-  <div id="content">
-    <div class="inner">
-      <div class="container_12">
-        <div class="wrapper">
-        <img src="images/logo-prominp2.jpg" class="about-img">
-          <p>
+<?php
+/**
+ *
+ *
+ * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+ * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE.txt
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org CakePHP(tm) Project
+ * @package       app.View.Layouts
+ * @since         CakePHP(tm) v 0.10.0.1076
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT Licenses
+ */
+$this->assign('headerMenu', $this->element('secondHeaderElement'));
+//$this->assign('slider', $this->element('sliderElement'));
+//$this->assign('hist', $this->element('histElement'));
+//$this->assign('parc', $this->element('parcElement'));
+?>
+
+<div class="container_12">
+    <div class="wrapper">
+        <img src="<?php echo $this->webroot; ?>img/logo-prominp2.jpg" class="about-img">
+        <p>
             Desde 2003, o Governo Federal vem implementando uma política de conteúdo local no setor de petróleo e gás natural, com o intuito de ampliar a participação da indústria nacional no fornecimento de bens e serviços, e colocá-la em um patamar de competitividade de classe mundial, de forma a traduzir os massivos programas de investimentos do setor em geração de emprego e renda para o país.<br>
 
             <br>Criado em 2003, com o objetivo de maximizar a participação da indústria nacional fornecedora de bens e serviços, em bases competitivas e sustentáveis, na implantação de projetos de investimentos do setor de petróleo e gás natural no Brasil e no exterior.<br>
@@ -67,21 +43,6 @@
             <br>Considerando-se que a produção nos campos do pré-sal ainda é iniciante, é de esperar que a magnitude dos investimentos no setor atinja um patamar ainda maior no final desta década. Nesse sentido, surgem grandes desafios relacionados à capacidade de inovação e de atendimento às demandas por bens de capital, aço, navios, sondas exploratórias e tudo mais que estiver associado aos investimentos da indústria petrolífera.<br>
 
             <br>Por essa razão, o Prominp continuará firme em sua trajetória, para que tudo o que pode ser feito no Brasil, seja feito no Brasil.<br>
-          </p>
-        </div>
-      </div>
+        </p>
     </div>
-  </div>
-  <footer>
-  <footer>
-  <div class="container_12">
-    <div class="wrapper">
-      <div class="grid_8"> Observatório Regional do Trabalho | <a href="http://www.ifrs.edu.br/"> IFRS </a></div>
-      <!--<div class="grid_4">
-        <div class="social"> My Social:<a href="#"><img src="images/facebook-icon.png" alt=""></a><a href="#"><img src="images/twitter-icon.png" alt=""></a> </div>
-      </div>-->
-    </div>
-  </div>
-</footer>
-</body>
-</html>
+</div>

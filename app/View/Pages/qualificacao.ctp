@@ -1,53 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Linhas de pesquisa</title>
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta charset="utf-8">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery-migrate-1.1.1.js"></script>
-  <script src="js/bootstrap.js"></script>
-<!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
-<link href='http://fonts.googleapis.com/css?family=Lato:300italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
-<![endif]-->
-</head>
-<body>
-  <header>
-    <div class="container_12">
-       <div class="grid_13">
-        <div class="wrapper"> <a href="index.html" class="logo">teste</a>
-          <nav>
-            <ul class="menu">
-              <li  class="active"><a href="index.html">Início</a></li>
-              <li><a>Programas</a>
-                <ul>
-                  <li><a href="pesquisa.html">Pesquisa</a></li><br>
-                  <li><a href="prominp.html">Prominp</a></li><br>
-                  <li><a href="pronatec.html">Pronatec</a></li>
-                </ul>
-              </li>
-              <li><a href="base.html">Bases</a></li>
-              <li><a href="linha-pesquisa2.html">Qualificação</a></li>
-              <li><a href="sobre-ifrs.html">ifrs</a></li>
-              <li><a href="contato.html">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
-    </div>
-  </header>
+<?php
+/**
+ *
+ *
+ * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+ * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE.txt
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org CakePHP(tm) Project
+ * @package       app.View.Layouts
+ * @since         CakePHP(tm) v 0.10.0.1076
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT Licenses
+ */
+    
+    $this->assign('headerMenu', $this->element('secondHeaderElement'));
+    //$this->assign('slider', $this->element('sliderElement'));
+    //$this->assign('hist', $this->element('histElement'));
+    //$this->assign('parc', $this->element('parcElement'));
+
+?>
+<style>
+    .lista { position: relative; }
+</style>
+
+
+<div class="grid_12">
+    <div class="block">
   <ul class="nav nav-tabs">
     <li class="active"><a href="#publica" data-toggle="tab">Publicas</a></li>
     <li class=""><a href="#privada" data-toggle="tab">Privadas</a></li>
@@ -292,6 +273,5 @@
 </div>
 </div>
 </div>
-
-</body>
-</html>
+</div>
+</div>

@@ -56,19 +56,4 @@
             </div>
         </div>
     </div>
-    <div class="wrapper h-pad">
-        <div class="grid_4 omega">
-            <h2>Newsletter</h2>
-            <form id="subscribe-form" action="#">
-                <fieldset>
-                    <input type="text" value="Digite Seu Email" onFocus="if (this.value == 'Digite Seu Email') {
-                                this.value = ''
-                            }" onBlur="if (this.value == '') {
-                                        this.value = 'Digite Seu Email'
-                                    }">
-                    <a href="#" class="button1" onClick="document.getElementById('subscribe-form').submit()">Inscrever</a>
-                </fieldset>
-            </form>
-        </div>
-    </div>
 </div>
